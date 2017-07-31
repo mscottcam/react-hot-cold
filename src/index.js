@@ -13,6 +13,8 @@
 // );
 
 import store from './store';
-import * from './actions/action'
+import {newGuess} from './actions/actions';
 
-store.dispatch(addGuess())
+store.dispatch(newGuess(64, 'You are cold'));
+
+console.log("THIS IS WHAT YOU LOOKING FOR", store)

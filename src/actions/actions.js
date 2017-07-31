@@ -1,19 +1,10 @@
 
-const ADD_GUESS = 'ADD_GUESS';
-const addGuess = (guess) => ({
-  type: ADD_GUESS,
-  guess
+const NEW_GUESS = 'NEW_GUESS';
+export const newGuess = (guess, feedback) => ({
+  type: NEW_GUESS,
+  guess,
+  feedback
 });
-
-const SHOW_FEEDBACK = 'SHOW_FEEDBACK';
-const showFeedback = () => {
-  type: SHOW_FEEDBACK;
-};
-
-const GUESS_COUNT = 'GUESS_COUNT';
-const guessCount = () => {
-  type: GUESS_COUNT
-};
 
 const TOGGLE_WHAT = 'TOGGLE_WHAT';
 const toggleWhat = () => {
