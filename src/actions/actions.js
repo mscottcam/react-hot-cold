@@ -1,8 +1,9 @@
 
 const ADD_GUESS = 'ADD_GUESS';
-const addGuess = () => {
-  type: ADD_GUESS;
-};
+const addGuess = (guess) => ({
+  type: ADD_GUESS,
+  guess
+});
 
 const SHOW_FEEDBACK = 'SHOW_FEEDBACK';
 const showFeedback = () => {
@@ -11,12 +12,12 @@ const showFeedback = () => {
 
 const GUESS_COUNT = 'GUESS_COUNT';
 const guessCount = () => {
-  type: GUESS_COUNT;
+  type: GUESS_COUNT
 };
 
 const TOGGLE_WHAT = 'TOGGLE_WHAT';
 const toggleWhat = () => {
-  type: TOGGLE_WHAT;
+  type: TOGGLE_WHAT
 };
 
 const CORRECT_ANSWER = 'CORRECT_ANSWER';
